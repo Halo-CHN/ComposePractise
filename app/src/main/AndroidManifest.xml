@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstCompose">
         <activity
+            android:name=".ModifiersActivity"
+            android:exported="true"
+            android:label="@string/title_activity_modifiers"
+            android:theme="@style/Theme.FirstCompose.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".StateManage"
             android:exported="true"
             android:label="@string/title_activity_state_manage"
@@ -27,9 +38,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.FirstCompose.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.FirstCompose.NoActionBar"></activity>
     </application>
 
 </manifest>
